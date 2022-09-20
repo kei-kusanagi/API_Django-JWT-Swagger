@@ -159,3 +159,17 @@ SIMPLE_JWT = {
     'JTI_CLAIM': 'jti',
     'TOKEN_USER_CLASS': 'rest_framework_simplejwt.models.TokenUser',
 }
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+    },
+}
